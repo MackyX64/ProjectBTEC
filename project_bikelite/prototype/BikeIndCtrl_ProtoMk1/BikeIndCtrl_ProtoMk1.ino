@@ -59,7 +59,7 @@ void loop() {
     if (state == 2) 
       {
         Serial.println("IndLED.left(enable)"); //Debug text to print to serial monitor.
-        FlashLED(PinOut2); 
+        FlashLED(PinOut2);
         Serial.println("FlashLED.timeout()"); 
     }
   // THIS IS EXPERIMENTAL CODE ONLY! MAY BE REMOVED IN FUTURE VERSIONS!
