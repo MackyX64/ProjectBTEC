@@ -52,13 +52,15 @@ void loop() {
     int state = Serial.parseInt(); //Parses input as integer value.
     if (state == 1) 
       { 
+        Serial.println("IndLED.left(enable)"); //Debug text to print to serial monitor.
         FlashLED(PinOut1); 
-        Serial.println("FlashLED Timeout!"); 
+        Serial.println("FlashLED.timeout()"); 
       } 
     if (state == 2) 
       {
-        FlashLED(PinOut2);
-        Serial.println("FlashLED Timeout!");
+        Serial.println("IndLED.left(enable)"); //Debug text to print to serial monitor.
+        FlashLED(PinOut2); 
+        Serial.println("FlashLED.timeout()"); 
     }
   // THIS IS EXPERIMENTAL CODE ONLY! MAY BE REMOVED IN FUTURE VERSIONS!
   } 
